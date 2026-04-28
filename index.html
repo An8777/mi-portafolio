@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson Medina | Portafolio</title>
+    
+    <link rel="icon" type="image/png" href="img/foto1.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #2563eb; --dark: #0f172a; --accent: #fbbf24; --light: #f1f5f9; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; color: var(--dark); line-height: 1.6; background-color: #fff; }
+
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1.2rem 8%; background: white; position: fixed;
+            width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .logo { font-size: 1.5rem; font-weight: 700; }
+        .logo span { color: var(--primary); }
+
+        header {
+            min-height: 90vh; display: flex; align-items: center;
+            padding: 120px 8% 60px; background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+        }
+        .hero-container { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; }
+        .hero-text h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1rem; }
+        .hero-text h1 span { color: var(--primary); }
+        .tagline { font-size: 1.4rem; font-weight: 600; border-left: 5px solid var(--accent); padding-left: 15px; margin-bottom: 1.5rem; }
+        .hero-img { width: 100%; max-width: 380px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 8px solid white; }
+
+        /* SECCIÓN SOBRE MÍ */
+        .about-section { padding: 100px 8%; background-color: white; text-align: center; }
+        .about-container { max-width: 900px; margin: 0 auto; }
+        .about-text { font-size: 1.2rem; color: #475569; margin-bottom: 30px; }
+        .highlight { color: var(--primary); font-weight: 600; }
+
+        section { padding: 80px 8%; text-align: center; }
+        h2 { font-size: 2.5rem; margin-bottom: 3rem; font-weight: 700; }
+
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .gallery-item { height: 400px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+
+        .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: var(--dark); color: white; padding: 40px; border-radius: 25px; border-bottom: 6px solid var(--accent); text-align: left; }
+        .card h3 { color: var(--accent); margin-bottom: 15px; }
+
+        footer { background: #020617; color: white; text-align: center; padding: 60px; }
+
+/* DISEÑO MODERNO PARA REDES SOCIALES */
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Colores originales de cada red */
+.facebook { background: #1877F2; }
+.instagram { background: #E4405F; }
+.threads { background: #000000; }
+.tiktok { background: #010101; }
+.email { background: #2563eb; }
+
+/* Efecto al poner el mouse encima */
+.social-link:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    filter: brightness(1.2);
+}
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AM<span>.</span></div>
+        <div style="font-weight: 600;">Portafolio 2026</div>
+    </nav>
+
+    <header id="inicio">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Anderson <span>Medina</span></h1>
+                <p class="tagline">Ingeniería en Sistemas | Locutor Deportivo ASDER</p>
+                <p style="margin-bottom: 2rem; color: #475569;">Innovando en el mundo del software y comunicando con pasión en el ámbito deportivo.</p>
+                <a href="#contacto" style="background: var(--primary); color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: bold;">Hablemos</a>
+            </div>
+            <div style="text-align: center;">
+                <img src="img/foto1.jpg" alt="Anderson Medina" class="hero-img">
+            </div>
+        </div>
+    </header>
+
+    <section class="about-section" id="sobre-mi">
+        <div class="about-container">
+            <h2>Sobre Mí</h2>
+            <p class="about-text">
+                Soy un joven de <span class="highlight">20 años</span> originario de San Salvador, El Salvador. 
+                Mi camino profesional se divide en dos mundos que me apasionan: la <span class="highlight">tecnología</span> y la <span class="highlight">locución</span>.
+            </p>
+            <p class="about-text">
+                Me gradué como <strong>Técnico en Desarrollo de Software</strong> en el Instituto Nacional de Antiguo Cuscatlan (INAC) y actualmente curso el <span class="highlight">3er ciclo de Ingeniería en Sistemas</span> en la Universidad Dr. Andrés Bello. 
+                Paralelamente, me formo en <span class="highlight">ASDER</span> para llevar la emoción del deporte a los medios de comunicación.
+            </p>
+        </div>
+    </section>
+
+<section id="contacto" style="background-color: #f8fafc; padding: 60px 0;">
+    <h2 style="text-align: center; margin-bottom: 20px;">Conecta Conmigo</h2>
+    <div class="social-container">
+        
+        <a href="https://www.facebook.com/anderson.medinacruz.56/" target="_blank" class="social-link facebook" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/medina.cruz06/" target="_blank" class="social-link instagram" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.threads.net/@medina.cruz06" target="_blank" class="social-link threads" title="Threads">
+            <i class="fa-brands fa-threads"></i>
+        </a>
+
+        <a href="mailto:andersonmedina@gmail.com" class="social-link email" title="Correo">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+    </div>
+</section>
+
+
+    <section id="galeria" style="background-color: var(--light);">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="img/foto1.jpg" alt="Foto 1"></div>
+            <div class="gallery-item"><img src="img/foto2.jpg" alt="Foto 2"></div>
+            <div class="gallery-item"><img src="img/Foto3.jpg" alt="Foto 3"></div>
+        </div>
+    </section>
+
+    <section id="estudios">
+        <h2>Mi Formación</h2>
+        <div class="grid-cards">
+            <div class="card">
+                <h3>Ingeniería</h3>
+                <p>U. Dr. Andrés Bello</p>
+                <p>3er Ciclo - Sistemas y Computación</p>
+            </div>
+            <div class="card">
+                <h3>Locución</h3>
+                <p>ASDER</p>
+                <p>Especialización en Radio y TV Deportiva</p>
+            </div>
+            <div class="card">
+                <h3>Software</h3>
+                <p>INAC</p>
+                <p>Técnico en Desarrollo e IA</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Anderson Medina | San Salvador, El Salvador</p>
+    </footer>
+
+</body>
+</html>
